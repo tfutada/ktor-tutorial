@@ -15,7 +15,6 @@ class ApplicationTest {
             module()
         }
 
-
         val response = client.get("/")
         assertEquals(HttpStatusCode.OK, response.status)
         assertEquals("Hello World!", response.bodyAsText())
@@ -26,7 +25,6 @@ class ApplicationTest {
         application {
             module()
         }
-
 
         val response = client.get("/test1")
         assertEquals(HttpStatusCode.OK, response.status)
