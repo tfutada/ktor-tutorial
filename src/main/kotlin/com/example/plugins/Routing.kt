@@ -13,7 +13,7 @@ fun Application.configureRouting() {
 
 
         get("/") {
-            call.respondText("Hello World222!")
+            call.respondText("Hello World!")
         }
 
         post("/abc") {
